@@ -11,51 +11,70 @@
 
 <body>
 
-   <form action="#" method="get" enctype="multipart/form-data"></form>
+   <form action="#" method="post">
    <div>
-      <input 
-      <!--disabled-
-       placeholder="podpis na4alna" type="text" name="username" value="">
+      <p> Імʼя</p>
+      <input tabindex="1" placeholder="imia" type="text" name="username">
    </div>
-   <div>
-      <input type="password" name="userpass" value="">
-   </div>
-   <br>
-   <div>
-      <p><input type="radio" name="beer" value="lager">Svitle piwo</p>
-      <p><input checked type="radio" name="beer" value="dark">Temne piwo</p>
-      <br>
-      <div>
-         <p><input tabindex="2" type="radio" name="beer2" value="lager">Svitle piwo</p>
-         <p><input tabindex="2" type="radio" name="beer2" value="dark">Temne piwo</p>
-      </div>
-      <br>
-      <div>
-         <p><input type="checkbox" name="car1" value="yes">Najavnist auto</p>
-         <p><input checked type="checkbox" name="car2" value="yes">Najavnist auto 2</p>
-         <p><input type="checkbox" name="car3" value="yes">Najavnist auto 3</p>
-      </div>
 
-      <br>
+   <div>
+      <p>Пароль</p>
+      <input tabindex="2" type="password" name="userpass">
+   </div>
+
+   <div>
+      <p>Телефон</p>
+      <input tabindex="3" type="tel" name="telefon">
+   </div>
+
+   <div>
+      <p>Pol / Sex</p>
       <div>
-         <p><input type="file" name="foto"></p>
+         <input tabindex="4" aria-checked="checked" checked type="radio" name="gender" value="male">Men
       </div>
-      <br>
       <div>
-         <textarea name="text"></textarea>
+         <input tabindex="4" type="radio" name="gender" value="female">Women
       </div>
-      <br>
+   </div>
+
+   <div>
+      <p>Imuschestvo</p>
       <div>
-         <select <!--multiple--> name="color">
-            <option value="red">red</option>
-            <option value="blue">blue</option>
-            <option selected value="yellow">yellow</option>
-         </select>
+         <input tabindex="5" aria-checked="true" checked type="checkbox" name="bike" value="yes">Velik
       </div>
-      <br>
       <div>
-         <button type="reset">Otpravka</button>
+         <input tabindex="6" type="checkbox" name="car" value="yes">Mashina
       </div>
+      <div>
+         <input tabindex="7" disabled type="checkbox" name="car" value="yes">Kvartira
+      </div>
+   </div>
+
+   <div>
+      <p>Informatsia dodatkova</p>
+      <textarea tabindex="8" name="text"></textarea>
+   </div>
+
+   <div>
+      <p>Prijednaty foto</p>
+      <p><input tabindex="9" type="file" name="userfoto"></p>
+   </div>
+
+   <div>
+      <p>Lubimiy kolor</p>
+      <select name="color" tabindex="10">
+         <option value="red">red</option>
+         <option value="green">green</option>
+         <option aria-checked="true" selected value="yellow">yellow</option>
+      </select>
+   </div>
+
+   <div>
+      <p>Dejstvia</p>
+      <button tabindex="11" type="submit">Otpravka</button>
+      <button tabindex="12" type="reset">Ochistka</button>
+   </div>
+</form>
 
 </body>
 
